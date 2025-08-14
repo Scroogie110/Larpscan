@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Larpscan</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Larpscan</h1>
+        <button id="theme-toggle">🌙</button>
+    </header>
+
+    <main>
+        <!-- Search Section -->
+        <section id="search-section">
+            <input type="text" id="walletInput" placeholder="Enter wallet address or username" />
+            <button onclick="scanWallet()">Scan</button>
+        </section>
+
+        <!-- Report Section -->
+        <section id="report-section" class="hidden">
+            <h2>Wallet Report</h2>
+            <p><strong>Address:</strong> <span id="report-address"></span></p>
+            <p><strong>Balance:</strong> <span id="report-balance"></span> SOL</p>
+            <p><strong>Transactions:</strong> <span id="report-tx"></span></p>
+            <p><strong>Rugged Projects Joined:</strong> <span id="report-rugs"></span></p>
+            <p><strong>LarpScore:</strong> <span id="report-score"></span> / 100</p>
+        </section>
+
+        <!-- Leaderboard -->
+        <section id="leaderboard-section">
+            <h2>Biggest Larps Leaderboard</h2>
+            <ol id="leaderboard-list"></ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by Larpscan - Spot the fakes before they spot you 🚀</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
